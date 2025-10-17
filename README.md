@@ -50,7 +50,7 @@ This project showcases key <b>IT support, system administration, and troubleshoo
 
 <h3>Step 1: Create and Access Azure Virtual Machine</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="Azure VM Creation Screenshot Placeholder" width="80%"/>
+<img width="547" height="443" alt="image" src="https://github.com/user-attachments/assets/84a79156-8cb2-460f-babc-764c1b5ca819" />
 </p>
 
 - Created a Windows 10 VM in Azure named <b>osticket-vm</b>  
@@ -66,7 +66,7 @@ This project showcases key <b>IT support, system administration, and troubleshoo
 
 <h3>Step 2: Install and Configure IIS (Internet Information Services)</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="IIS Installation Screenshot Placeholder" width="80%"/>
+<img width="732" height="232" alt="image" src="https://github.com/user-attachments/assets/589f6c51-16c1-497b-afd0-0c7b860f655a" />
 </p>
 
 - Enabled IIS with <b>CGI</b> support via “Turn Windows features on or off”  

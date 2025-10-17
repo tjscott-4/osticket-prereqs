@@ -80,7 +80,7 @@ This project showcases key <b>IT support, system administration, and troubleshoo
 
 <h3>Step 3: Install PHP and Configure in IIS</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="PHP Configuration Screenshot Placeholder" width="80%"/>
+<img width="1037" height="378" alt="image" src="https://github.com/user-attachments/assets/afcadd6f-a740-45b2-8916-63a51992cf89" />
 </p>
 
 - Installed:

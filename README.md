@@ -199,14 +199,35 @@ Basic web server testing and validation
 <img src="https://i.imgur.com/DJmEXEB.png" alt="PHP Extensions Screenshot Placeholder" width="80%"/>
 </p>
 
-- In IIS → PHP Manager → “Enable or disable an extension”  
-- Enabled:  
-  - `php_imap.dll`  
-  - `php_intl.dll`  
-  - `php_opcache.dll`  
+1.Open IIS Manager → PHP Manager → Enable or disable an extension
 
-<b>Why this matters:</b> These extensions enable email handling, internationalization, and performance optimization for osTicket.  
-**Skills demonstrated:** Application configuration, PHP environment tuning.
+2.Enabled the following PHP extensions:
+
+  -php_imap.dll
+
+  -php_intl.dll
+
+  -php_opcache.dll
+
+💡 Explanation:
+These extensions provide additional functionality for osTicket:
+
+php_imap.dll → enables email handling
+
+php_intl.dll → supports internationalization
+
+php_opcache.dll → improves PHP performance by caching scripts
+
+📘 Why this matters:
+Ensuring the correct PHP extensions are enabled is critical for application features and performance. It demonstrates an understanding of configuring a PHP environment for production-ready applications.
+
+🧩 Skills demonstrated:
+
+PHP application configuration
+
+Environment tuning and optimization
+
+Understanding of feature-specific extensions
 
 ---
 

@@ -236,27 +236,58 @@ Understanding of feature-specific extensions
 <img src="https://i.imgur.com/DJmEXEB.png" alt="Permissions Configuration Screenshot Placeholder" width="80%"/>
 </p>
 
-- Renamed configuration file:  
-  - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`  
-  - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`  
-- Disabled inheritance and added new permission:  
-  - <b>Everyone → Full Control</b>  
+1.Renamed the configuration file:
 
-<b>Why this matters:</b> Proper permissions prevent access errors during installation.  
-**Skills demonstrated:** File system security, permission management.
+  -From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+
+  -To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+2.Disabled inheritance and set new permissions:
+
+  -Everyone → Full Control
+
+💡 Explanation:
+Renaming the sample configuration file and setting proper permissions ensures osTicket can read/write configuration data during installation without encountering access errors.
+
+📘 Why this matters:
+Demonstrates knowledge of file system security and permission management, which are critical for preventing installation issues and ensuring application functionality.
+
+🧩 Skills demonstrated:
+
+File system security
+
+Permission management
+
+Application setup and troubleshooting
 
 ---
 
 <h3>Step 8: Create Database in HeidiSQL</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="HeidiSQL Screenshot Placeholder" width="80%"/>
+<img width="697" height="565" alt="image" src="https://github.com/user-attachments/assets/23056938-6a3d-4e36-84c3-377bb27df675" />
+  <img width="1087" height="656" alt="image" src="https://github.com/user-attachments/assets/15fe4c9a-4d6f-4341-9ea5-b7884a74609b" />
+
 </p>
 
-- Installed HeidiSQL → connected using root credentials  
-- Created a new database named <b>osTicket</b>  
+1.Installed HeidiSQL
 
-<b>Why this matters:</b> A working database connection is required for osTicket to store tickets, users, and configurations.  
-**Skills demonstrated:** Database administration, schema creation.
+2.Connected to MySQL using root credentials
+
+3.Created a new database named osTicket
+
+💡 Explanation:
+Used HeidiSQL to create a dedicated database for osTicket, which will store all tickets, user accounts, and configuration settings.
+
+📘 Why this matters:
+A properly configured database connection is essential for osTicket to function. This step demonstrates the ability to manage databases and create schemas for applications.
+
+🧩 Skills demonstrated:
+
+Database administration
+
+Schema creation
+
+Connecting and managing MySQL databases using GUI tools
 
 ---
 

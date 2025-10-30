@@ -66,62 +66,131 @@ This project showcases key <b>IT support, system administration, and troubleshoo
 
 <h3>Step 2: Install and Configure IIS (Internet Information Services)</h3>
 <p>
-<img width="732" height="232" alt="image" src="https://github.com/user-attachments/assets/589f6c51-16c1-497b-afd0-0c7b860f655a" />
-</p>
+<img width="1117" height="635" alt="image" src="https://github.com/user-attachments/assets/b604a947-0d75-4226-b7ef-d9a0df11400f" />
 
-- Enabled IIS with <b>CGI</b> support via “Turn Windows features on or off”  
-  - World Wide Web Services → Application Development Features → ✅ CGI  
-- IIS acts as the web server to host osTicket.  
 
-<b>Why this matters:</b> IIS is commonly used in enterprise environments; configuring it demonstrates server management fundamentals.  
-**Skills demonstrated:** Windows server configuration, web hosting setup.
+1.Navigate to: Control Panel → Programs → Turn Windows features on or off
+
+2.Check Internet Information Services (IIS)
+
+3.Expand World Wide Web Services → Application Development Features
+
+4.Enable CGI → Click OK, then Close once installation completes
+
+💡 Explanation:
+Enabled IIS with CGI support to host the osTicket web application.
+IIS acts as the web server, and CGI allows dynamic processing for PHP-based applications.
+
+📘 Why this matters:
+IIS is a standard web hosting solution used in enterprise environments. Configuring it demonstrates foundational skills in Windows server management and web service deployment.
+
+🧩 Skills demonstrated:
+
+Windows Server configuration
+
+Web hosting setup using IIS
+
+Understanding of CGI and PHP integration
 
 ---
 
 <h3>Step 3: Install PHP and Configure in IIS</h3>
 <p>
-<img width="1037" height="378" alt="image" src="https://github.com/user-attachments/assets/afcadd6f-a740-45b2-8916-63a51992cf89" />
-</p>
+<img width="494" height="408" alt="image" src="https://github.com/user-attachments/assets/c0f09e5f-3ef7-4478-97d9-4e1422427e9e" />
+<img width="489" height="382" alt="image" src="https://github.com/user-attachments/assets/386a028e-3301-4a08-813e-195834442aaf" />
 
-- Installed:
-  - PHP Manager for IIS (`PHPManagerForIIS_V1.5.0.msi`)
-  - IIS Rewrite Module (`rewrite_amd64_en-US.msi`)
-- Created `C:\PHP` directory and extracted `php-7.3.8-nts-Win32-VC15-x86.zip` into it.  
-- Installed `VC_redist.x86.exe` to support PHP runtime.  
-- Registered PHP in IIS → PHP Manager → `C:\PHP\php-cgi.exe`.  
-- Restarted IIS to apply changes.  
 
-<b>Why this matters:</b> Configuring PHP bridges IIS with osTicket’s application layer.  
-**Skills demonstrated:** PHP integration, web server configuration, environment variable setup.
+1.Installed required components:
+
+2.PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+
+3.IIS Rewrite Module (rewrite_amd64_en-US.msi)
+
+4.Created a directory: C:\PHP
+
+5.Extracted php-7.3.8-nts-Win32-VC15-x86.zip into the PHP directory
+
+6.Installed VC_redist.x86.exe to enable PHP runtime support
+
+7.Opened IIS Manager → PHP Manager → Register new PHP version and selected C:\PHP\php-cgi.exe
+
+8.Restarted IIS to apply all configuration changes
+
+💡 Explanation:
+Configured PHP to work with IIS by adding the necessary runtime and modules. This step ensures IIS can process PHP scripts — essential for osTicket’s web-based functionality.
+
+📘 Why this matters:
+PHP serves as the application layer for osTicket, enabling dynamic content rendering and ticket management. Connecting it properly within IIS demonstrates understanding of web server–application integration.
+
+🧩 Skills demonstrated:
+
+PHP runtime setup and integration
+
+Web server configuration
+
+Environment and dependency management
 
 ---
 
 <h3>Step 4: Install MySQL Database</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="MySQL Installation Screenshot Placeholder" width="80%"/>
+<img width="502" height="376" alt="image" src="https://github.com/user-attachments/assets/46ee902e-516a-4918-8e7d-d1d56e59d15b" />
 </p>
 
-- Installed MySQL 5.5.62 → Typical setup → Launched Configuration Wizard  
-- Set root credentials:  
-  - Username: <code>root</code>  
-  - Password: <code>root</code>  
+1.Installed MySQL 5.5.62 using the Typical setup option
 
-<b>Why this matters:</b> osTicket stores its ticket data in MySQL; understanding databases is vital for backend troubleshooting.  
-**Skills demonstrated:** Database installation, credential management, service configuration.
+2.Launched the MySQL Configuration Wizard after installation
 
+3.Set root credentials:
+
+  -Username: root
+
+  -Password: root
+
+💡 Explanation:
+Installed and configured MySQL to serve as the backend database for osTicket. MySQL stores all ticket data, user information, and configuration settings.
+
+📘 Why this matters:
+Understanding database setup and credential management is essential for troubleshooting application connectivity issues and maintaining secure access to stored data.
+
+🧩 Skills demonstrated:
+
+Database installation and configuration
+
+Credential and access management
+
+Backend service setup for web applications
 ---
 
 <h3>Step 5: Install osTicket and Configure IIS Site</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="osTicket Installation Screenshot Placeholder" width="80%"/>
+<img width="1344" height="452" alt="image" src="https://github.com/user-attachments/assets/3d6ecf59-2b90-43cb-98af-50ed04402ebf" />
 </p>
 
-- Extracted `osTicket-v1.15.8.zip` → copied “upload” folder into `C:\inetpub\wwwroot`  
-- Renamed “upload” → “osTicket”  
-- Restarted IIS → browsed to <code>http://localhost/osTicket</code>  
+1.Extracted osTicket-v1.15.8.zip
 
-<b>Why this matters:</b> This connects the web server to the help desk application, making it accessible via browser.  
-**Skills demonstrated:** Web directory management, application deployment.
+2.Copied the “upload” folder into C:\inetpub\wwwroot
+
+3.Renamed the folder from “upload” to “osTicket”
+
+4.Restarted IIS
+
+5.Opened a browser and navigated to http://localhost/osTicket
+ to verify the setup
+
+💡 Explanation:
+Deployed the osTicket web application by placing its files into the IIS web root directory. Restarting IIS and testing the URL confirmed that the application was accessible through the local web server.
+
+📘 Why this matters:
+This step connects the web server to the help desk application, enabling browser-based access for users. It demonstrates practical knowledge of web directory management and application deployment.
+
+🧩 Skills demonstrated:
+
+Web directory and file management
+
+Application deployment within IIS
+
+Basic web server testing and validation
 
 ---
 

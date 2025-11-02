@@ -237,8 +237,9 @@ Understanding of feature-specific extensions
 
 <h3>Step 7: Configure osTicket Permissions</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="Permissions Configuration Screenshot Placeholder" width="80%"/>
-</p>
+<img width="1128" height="489" alt="image" src="https://github.com/user-attachments/assets/d69ddcc7-9676-4653-a588-4f19a0266c4a" />
+<img width="1123" height="537" alt="image" src="https://github.com/user-attachments/assets/a54db0d1-dbeb-4031-82ba-355631b5f331" />
+
 
 1.Renamed the configuration file:
 
@@ -297,7 +298,7 @@ Connecting and managing MySQL databases using GUI tools
 
 <h3>Step 9: Complete osTicket Setup in Browser</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="osTicket Web Setup Screenshot Placeholder" width="80%"/>
+<img width="1523" height="911" alt="image" src="https://github.com/user-attachments/assets/b61ad7ac-c4c2-40f3-9f73-d8a15ee70ce7" />
 </p>
 
 - Continued web setup in browser:  
@@ -316,22 +317,11 @@ Access URLs:
 
 ---
 
-<h3>Step 10: Post-Installation Cleanup</h3>
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="Cleanup Screenshot Placeholder" width="80%"/>
-</p>
-
-- Deleted setup directory: `C:\inetpub\wwwroot\osTicket\setup`  
-- Set `ost-config.php` to read-only.  
-
-<b>Why this matters:</b> Securing configuration files and removing setup scripts reduces security risks.  
-**Skills demonstrated:** System hardening, configuration management.
-
 ---
 
 <h2>Final Result</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="osTicket Final Login Page Screenshot Placeholder" width="80%"/>
+<img width="1038" height="508" alt="image" src="https://github.com/user-attachments/assets/b6b82c8f-ce63-476b-9bc3-41113cc877f9" />
 </p>
 
 ✅ osTicket successfully installed and running on Windows 10 Azure VM  

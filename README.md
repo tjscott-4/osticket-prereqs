@@ -196,7 +196,11 @@ Basic web server testing and validation
 
 <h3>Step 6: Enable Required PHP Extensions</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" alt="PHP Extensions Screenshot Placeholder" width="80%"/>
+<img width="813" height="454" alt="image" src="https://github.com/user-attachments/assets/900b39ca-43b7-4262-9815-27df83399085" />
+<img width="424" height="146" alt="image" src="https://github.com/user-attachments/assets/e6bfec5f-b067-4547-adf2-82511218c64c" />
+<img width="595" height="402" alt="image" src="https://github.com/user-attachments/assets/0f595401-1912-4f66-a241-11883b4884ee" />
+  
+
 </p>
 
 1.Open IIS Manager → PHP Manager → Enable or disable an extension
